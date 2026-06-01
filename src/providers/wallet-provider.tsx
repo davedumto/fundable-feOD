@@ -32,7 +32,7 @@ const WalletProvider = ({ children }: { children: React.ReactNode }) => {
   const { connectors: injectedConnectors } = useInjectedConnectors({
     recommended: [argent(), braavos()],
     includeRecommended: "always",
-    order: "random",
+    order: "alphabetical",
   });
 
   const connectors = useMemo(
